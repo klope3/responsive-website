@@ -1,0 +1,386 @@
+/* #region Defaults */
+h1, h2, h3 {
+    color: #6b6b6b;
+    font-weight: 300;
+}
+
+a {
+    color: #777;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: #999;
+}
+/* #endregion */
+
+/* #region Full page */
+
+.main {
+    max-width: 1024px;
+    margin: auto;
+}
+
+body {
+    margin: 0px;
+    margin-top: 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+/* #endregion */
+
+/* #region Header */
+
+header {
+    display: flex;
+    align-items: center;
+    /* height: 64px;
+    align-items: center;
+    margin-left: 80px; */
+    /*font-size: 1.7em;*/
+    /* gap: 30px; */
+}
+
+.brandContainer {
+    display: flex;
+    width: 300px;
+}
+
+.brandContainer p {
+    margin: 0;
+    font-size: 1.7em;
+}
+
+.brandContainer img {
+    vertical-align: middle;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    font-size: 1.4em;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
+
+header > a {
+    height: 100%;
+}
+
+.headerSpacer {
+    flex: 1;
+}
+
+.logoContainer {
+    background-image: url("https://i.pinimg.com/474x/0d/0b/21/0d0b211c1ecc0562b9f4c2a4305c9436.jpg");
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    /* position: absolute;
+    left: 8px;
+    top: 8px; */
+}
+
+.hamburgerMenuIcon, input[type="checkbox"] {
+    display: none;
+}
+
+.hamburgerMenuIcon img {
+    width: 30px;
+    height: 30px;
+}
+
+#navCheckbox:checked ~ nav {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: 85px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+/* #endregion */
+
+/* #region About Us upper text */
+
+.aboutUsUpperContainer {
+    text-align: center;
+    max-width: 860px;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 0px;
+}
+
+/* #endregion */
+
+/* #region Interior Design Pictures */
+
+.designImageContainer {
+    overflow: hidden;
+    width: 100%;
+    height: 222px;
+    grid-rows
+}
+
+.aboutUsImageGrid h2 {
+    font-weight: 600;
+}
+
+.aboutUsImageGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 334px);
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+    margin-top: 45px;
+    gap: 10px;
+    padding: 0px 10px;
+}
+
+.aboutUsImageCell {
+    /* max-width: 341px; */
+}
+
+#designPicture1 {
+    width: 100%;
+    height: 100%;
+}
+
+#designPicture2 {
+    width: 100%;
+    height: 100%;
+}
+
+#designPicture3 {
+    width: 100%;
+    height: 100%;
+}
+/* #endregion */
+
+/* #region Our Team area */
+/* .portraitContainer {
+    overflow: hidden;
+    max-height: 200px;
+} */
+
+/* portrait images positioned with hidden overflow, instead of saving cropped version */
+/* #portrait1 {
+    position: relative;
+    left: -121px;
+    top: -98px;
+}
+
+#portrait2 {
+    position: relative;
+    left: -423px;
+    top: -52px;
+}
+
+#portrait3 {
+    position: relative;
+    left: -704px;
+    top: -124px;
+}
+
+#portrait4 {
+    position: relative;
+    left: -147px;
+    top: -52px;
+} */
+
+.aboutUsTeamContainer h2 {
+    font-size: 3em;
+    margin-bottom: 0px;
+    color: #999;
+}
+
+.aboutUsTeamGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 178px);
+    max-width: 879px;
+    margin: auto;
+    justify-content: space-evenly;
+    padding-top: 45px;
+    font-weight: 700;
+    text-align: left;
+    justify-items: center;
+    gap: 10px;
+}
+
+.aboutUsTeamGrid img {
+    width: 100%;
+}
+
+.aboutUsTeamContainer {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 122px;
+}
+
+.teamMemberContainer {
+    width: 100%;
+}
+
+.teamMemberContainer p {
+    margin-bottom: 6px;
+    color: #6b6b6b;
+}
+
+.aboutUsTeamBlurb {
+    max-width: 680px;
+    margin: auto;
+}
+
+.aboutUsTeamBlurb > h2::before, .aboutUsTeamBlurb > h2::after {
+    content: " - ";
+}
+
+.teamMemberSocialIcons a {
+    color: rgb(184, 184, 184);
+}
+
+.teamMemberSocialIcons a:hover {
+    color: #6b6b6b;
+}
+/* #endregion */
+
+/* #region Footer */
+footer {
+    background-color: #282828;
+    color: #777;
+}
+
+footer h3 {
+    color: white;
+}
+
+footer .fa-brands {
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.socialLinkGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 116px);
+    max-width: 549px;
+    margin: auto;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.contactInfoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 234px);
+    max-width: 821px;
+    margin: auto;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 30px 0px;
+    line-height: 1.3em;
+}
+
+.contactInfoGrid h3 {
+    font-size: 1em;
+}
+
+.copyrightInfo {
+    text-align: center;
+    padding-top: 60px;
+}
+/* #endregion */
+
+/* #region Responsiveness */
+
+@media (max-width: 1023px) {
+    .aboutUsImageGrid {
+        display: block;
+    }
+
+    .aboutUsImageCell {
+        display: grid;
+        grid-template-columns: 341px 1fr;
+        padding: 10px 0px;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .aboutUsTeamGrid {
+        max-width: 525px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hamburgerMenuIcon {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .aboutUsImageCell {
+        display: block;
+        text-align: center;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .aboutUsTeamGrid {
+        grid-template-columns: 360px;
+        max-width: 360px;
+        text-align: center;
+    }
+
+    .aboutUsTeamContainer p {
+        padding: 0px 10px;
+    }
+
+    .aboutUsTeamGrid p {
+        padding-left: 0px;
+    }
+
+    #designPicture1 {
+        height: unset;
+    }
+
+    .designImageContainer {
+        height: unset;
+    }
+    
+    .contactInfoGrid {
+        max-width: 300px;
+    }
+
+    .socialLinkGrid {
+        max-width: 200px;
+        gap: 20px;
+    }
+}
+
+/* #endregion */
